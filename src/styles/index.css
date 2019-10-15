@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "~@blueprintjs/select/lib/css/blueprint-select.css";
+@import "~@blueprintjs/table/lib/css/table.css";
+
+.group:hover .group-hover\:flex {
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    background-color:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background-color:#c0c0c0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvcmUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGNBQWM7QUFDZCxvQkFBb0I7QUFDcEIsbUJBQW1COztBQUVuQixrREFBa0Q7QUFDbEQseURBQXlEO0FBQ3pELDJEQUEyRDtBQUMzRCwrQ0FBK0M7O0FBRS9DO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLHdCQUF3QjtBQUM1Qjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQix3QkFBd0I7QUFDNUIiLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XHJcbkB0YWlsd2luZCBjb21wb25lbnRzO1xyXG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xyXG5cclxuQGltcG9ydCBcIn5AYmx1ZXByaW50anMvY29yZS9saWIvY3NzL2JsdWVwcmludC5jc3NcIjtcclxuQGltcG9ydCBcIn5AYmx1ZXByaW50anMvaWNvbnMvbGliL2Nzcy9ibHVlcHJpbnQtaWNvbnMuY3NzXCI7XHJcbkBpbXBvcnQgXCJ+QGJsdWVwcmludGpzL3NlbGVjdC9saWIvY3NzL2JsdWVwcmludC1zZWxlY3QuY3NzXCI7XHJcbkBpbXBvcnQgXCJ+QGJsdWVwcmludGpzL3RhYmxlL2xpYi9jc3MvdGFibGUuY3NzXCI7XHJcblxyXG4uZ3JvdXA6aG92ZXIgLmdyb3VwLWhvdmVyXFw6ZmxleCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFye1xyXG4gICAgd2lkdGg6NXB4O1xyXG4gICAgaGVpZ2h0OjVweDtcclxuICAgIGJvcmRlci1yYWRpdXM6NXB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjojZjFmMWYxO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1ie1xyXG4gICAgYm9yZGVyLXJhZGl1czo1cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNjMGMwYzA7XHJcbn0iXX0= */

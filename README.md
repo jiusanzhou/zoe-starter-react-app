@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Core libraries
 
-- [blueprintjs]([https://](https://blueprintjs.com)
+- [blueprintjs](https://blueprintjs.com)
 - [tailwindcss](https://tailwindcss.com)
 - [rebassjs](https://rebassjs.org)
 - [MobX](http://mobx.js.org)

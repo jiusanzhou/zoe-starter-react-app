@@ -7,6 +7,9 @@
 @import "~@blueprintjs/select/lib/css/blueprint-select.css";
 @import "~@blueprintjs/table/lib/css/table.css";
 
+@import "./variables.less";
+@import "~@blueprintjs/core/lib/less/variables.less";
+
 .group:hover .group-hover\:flex {
     display: flex;
 }

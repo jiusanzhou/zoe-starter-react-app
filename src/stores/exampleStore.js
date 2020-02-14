@@ -18,6 +18,7 @@ export class AppStore {
     @observable appsRegistry = observable.map()
     @observable currentAppID = null
 
+    @observable count = 0;
 
     @computed get apps() {
         // FIXME:
@@ -47,6 +48,10 @@ export class AppStore {
         mockApps.forEach(item => this.appsRegistry.set(item.name, {id: item.name, text: item.title, ...item}))
 
         this.isLoading = false
+    }
+
+    @action addCount() {
+        this.count++
     }
 }
 

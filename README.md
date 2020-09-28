@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Core libraries
 
-- [blueprintjs](https://chakra-ui.com/)
+- [chakra-ui](https://chakra-ui.com/)
 - [MobX](http://mobx.js.org)
 
 ## Available Scripts

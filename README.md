@@ -13,6 +13,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [chakra-ui](https://chakra-ui.com/)
 - [MobX](http://mobx.js.org)
 
+## Implement with backend
+
+1. with static server
+    - remove the `homepage` in `package.json`
+2. with embedded golang
+    - `ui.NewHandler()`
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,24 +1,37 @@
-import React from "react";
-import { Switch, Route, BrowserRouter, withRouter } from "react-router-dom";
-import { inject, observer } from "mobx-react";
-import { ChakraProvider, CSSReset } from "@chakra-ui/core";
+import React from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { inject, observer } from 'mobx-react';
 
-import theme from "./styles/theme";
+import Layout from './layouts';
+
+import routers from './routers';
 
 @withRouter
-@inject("appStore")
+@inject('appStore')
 @observer
 export default class App extends React.Component {
-    _onClick() {
-        this.props.appStore.addCount();
-    }
+  render() {
+    // use register layout
+    return (
+      <Switch>
+        {/* register page and router at here */}
+        {/* route with layout */}
+        {routers.map(({ path, page, layout = 'empty', ...rprops }, idx) => (
+          <Route
+            key={`_${idx}`}
+            exact
+            path={path}
+            component={props => (
+              <Layout layout={layout}>
+                {React.createElement(page, { ...this.props, ...props })}
+              </Layout>
+            )}
+            {...rprops}
+          />
+        ))}
 
-    render() {
-        // use register layout
-        return (
-            <ChakraProvider theme={theme}>
-                <CSSReset />
-            </ChakraProvider>
-        );
-    }
+        {/* install 404 page */}
+      </Switch>
+    );
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from "react-router-dom"
 import { Provider } from "mobx-react"
-import { ThemeProvider } from "@chakra-ui/core"
+import { ChakraProvider, CSSReset, ColorModeScript } from "@chakra-ui/core"
 
 import * as serviceWorker from './utils/serviceWorker'
 
@@ -14,11 +14,13 @@ import theme from "./styles/theme"
 import "./styles/core.css"
 
 ReactDOM.render(<Provider {...stores}>
-    <ThemeProvider theme={theme}>
-        <BrowserRouter>
+    <ChakraProvider theme={theme}>
+        <CSSReset />
+        <ColorModeScript initialColorMode="light" />
+        <BrowserRouter basename={window.AppConfig && window.AppConfig.root}>
             <App />
         </BrowserRouter>
-    </ThemeProvider>
+    </ChakraProvider>
 </Provider>, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change

@@ -21,10 +21,11 @@ export default ({ layout = 'empty', ...props }) => {
     case 'object':
       name = layout.name
       _props = { ...layout, ...props, name: null }
+      break;
     default:
       break;
   }
 
   // create children in here???
-  return React.createElement(_layouts[layout] || empty, _props)
+  return React.createElement(_layouts[name] || empty, _props)
 };

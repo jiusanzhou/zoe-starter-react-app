@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Code, Text } from '@chakra-ui/core';
+import { Flex, Code, Text } from '@chakra-ui/react';
 
 export default ({ ...props }) => {
   return (

@@ -8,6 +8,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<!-- "@chakra-ui/theme": "^1.0.0-next.6",
+"@chakra-ui/theme-tools": "^1.0.0-next.6", -->
+
 ## Core libraries
 
 - [chakra-ui](https://chakra-ui.com/)

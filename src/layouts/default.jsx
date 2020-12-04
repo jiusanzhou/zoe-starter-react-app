@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, SimpleGrid } from '@chakra-ui/core';
+import { Flex, Box, SimpleGrid } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../views/ColorModeSwitcher';
 
 const Header = ({ ...props }) => {

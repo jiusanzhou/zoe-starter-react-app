@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from "react-router-dom"
 import { Provider } from "mobx-react"
-import { ChakraProvider, CSSReset, ColorModeScript } from "@chakra-ui/core"
+import { ChakraProvider, CSSReset, ColorModeScript } from "@chakra-ui/react"
 
 import * as serviceWorker from './utils/serviceWorker'
 

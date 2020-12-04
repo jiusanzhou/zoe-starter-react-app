@@ -7,7 +7,7 @@ import {
   Button,
   Box,
   Code,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 
 export default ({ location, history, title = '404：页面未找到!' }) => {
   return (

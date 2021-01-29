@@ -1,6 +1,7 @@
 {
   "name": "zoe-starter-react-app",
   "version": "0.1.0",
+  "homepage": "__root_path__",
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^3.19.1",

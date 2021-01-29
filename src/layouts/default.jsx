@@ -1,43 +1,29 @@
-import React from 'react';
-import { Flex, Box, SimpleGrid } from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../views/ColorModeSwitcher';
+import React, { Component } from 'react'
 
-const Header = ({ ...props }) => {
-  return (
-    <SimpleGrid as="header" m="0 auto" h="100%" alignItems="center" {...props}>
-      <ColorModeSwitcher justifySelf="flex-end" />
-    </SimpleGrid>
-  );
-};
+import { Flex } from 'rebass'
 
-const Footer = () => {
-  return <Flex as="footer"></Flex>;
-};
+// import { Resizable } from 're-resizable'
 
-// maxW ??? of page
+import Navbar from './views/nav-bar'
+import Navmenu from './views/nav-menu'
 
-export default ({ children, header = {}, footer = {}, ...props }) => {
-  return (
-    <Box>
-      <Box
-        top={0}
-        left={0}
-        right={0}
-        w="100%"
-        h={['3.5em', '4em', '4em', '5em']}
-        position="fixed"
-        borderBottomWidth="1px"
-        borderBottomStyle="solid"
-        // borderBottom="1px solid #e2e2e2"
-        // borderBottomColor={useColorModeValue('#e2e2e2', 'rgba(255, 255, 255, 0.16)')}
-      >
-        <Header maxW={['95%', '80%', '80%', '68em']} {...header} />
-      </Box>
-      {/* the main body for page */}
-      <Box as="main" pt={['3.5em', '4em', '4em', '5em']} minH="100vh" d="flex">
-        {children}
-      </Box>
-      <Footer {...footer} />
-    </Box>
-  );
-};
+class DefaultLayout extends Component {
+
+    constructor () {
+        super()
+    }
+
+    render () {
+        let { children } = this.props
+        return <Flex className="flex-col h-screen">
+            <Navbar />
+            <Flex className="flex-1 flex flex-row" mt={50}>
+                <Navmenu />
+                <div className="flex-1 flex justify-center">{children}</div>
+            </Flex>
+        </Flex>
+    }
+
+}
+
+export default DefaultLayout

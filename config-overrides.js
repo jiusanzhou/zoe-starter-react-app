@@ -20,7 +20,6 @@ module.exports = override(
     (config) =>
         rewireWebpackBundleAnalyzer(config, null, {
             analyzerMode: "static",
-            generateStatsFile: true,
-            // reportFilename: 'report.html'
+            generateStatsFile: false,
         })
 );

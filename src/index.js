@@ -3,13 +3,9 @@ import ReactDOM from 'react-dom'
 
 import * as serviceWorker from './utils/serviceWorker'
 
+import App from "./App"
+
 import "./styles/core.css"
-
-const App = () => {
-    return <div>Hello World</div>
-}
-
-
 
 ReactDOM.render(<App />, document.getElementById('root'))
 

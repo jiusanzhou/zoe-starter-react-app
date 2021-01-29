@@ -2,12 +2,25 @@ const {
     override,
     addDecoratorsLegacy,
     disableEsLint,
-  } = require("customize-cra")
+    addPostcssPlugins,
+} = require("customize-cra");
+
+const rewireWebpackBundleAnalyzer = require("react-app-rewire-webpack-bundle-analyzer");
 
 module.exports = override(
     // enable legacy decorators babel plugin
     addDecoratorsLegacy(),
-  
+
     // disable eslint in webpack
     disableEsLint(),
-)
+    
+    // postcss
+    addPostcssPlugins([require("tailwindcss"), require("autoprefixer")]),
+
+    (config) =>
+        rewireWebpackBundleAnalyzer(config, null, {
+            analyzerMode: "static",
+            generateStatsFile: true,
+            // reportFilename: 'report.html'
+        })
+);

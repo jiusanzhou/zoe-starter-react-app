@@ -42,10 +42,13 @@ function init_project() {
 # theme must start with ui/
 
 function list_theme() {
-    echo "Listing themes of $REPO:\n";
+    echo "Listing themes of $REPO:";
+    echo ""
+    
     git ls-remote $REPO_REMOTE | grep "heads/ui" | awk -F 'heads\/ui\/' '{print $2}'
 
-    echo "\nYou can set template with TMPL=XXX"
+    echo ""
+    echo "You can set template with TMPL=XXX"
 }
 
 case $CMD in

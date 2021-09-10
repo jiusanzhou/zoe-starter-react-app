@@ -33,6 +33,9 @@ function init_project() {
 
     git clone --quiet --branch=$TMPL $REPO_REMOTE $NAME > /dev/null
 
+    # clean the git information
+    cd $NAME && rm -rf .git; cd ..;
+
     echo "✨ Done!"
 }
 

@@ -1,19 +1,23 @@
 {
     "name": "zoe-starter-react-app",
-    "version": "0.1.0",
-    "homepage": "__root_path__",
+    "version": "0.2.0",
+    "homepage": "/",
     "private": true,
     "dependencies": {
-        "@chakra-ui/react": "^1.0.0",
-        "@emotion/react": "^11.0.0",
-        "@emotion/styled": "^11.0.0",
-        "framer-motion": "^2.9.4",
-        "mobx": "^5.14.0",
-        "mobx-react": "^6.1.4",
+        "@chakra-ui/icons": "^1.0.15",
+        "@chakra-ui/react": "^1.6.7",
+        "@emotion/react": "^11.4.1",
+        "@emotion/styled": "^11.3.0",
+        "cra-template-pwa": "1.0.3",
+        "framer-motion": "^4.1.17",
+        "mobx": "^6.3.3",
+        "mobx-react": "^7.2.0",
         "react": "^16.10.2",
         "react-dom": "^16.10.2",
+        "react-helmet": "^6.1.0",
         "react-icons": "^3.0.0",
-        "react-router-dom": "^5.1.2"
+        "react-router-dom": "^5.1.2",
+        "react-table": "^7.7.0"
     },
     "scripts": {
         "start": "react-app-rewired start",
@@ -43,6 +47,6 @@
         "prop-types": "^15.7.2",
         "react-app-rewire-webpack-bundle-analyzer": "^1.1.0",
         "react-app-rewired": "^2.1.5",
-        "react-scripts": "^3.3.1"
+        "react-scripts": "^4.0.3"
     }
 }

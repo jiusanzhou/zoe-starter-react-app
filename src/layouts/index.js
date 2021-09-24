@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 
 import empty from './empty';
 import _default from './default';
@@ -9,7 +10,7 @@ const _layouts = {
   default: _default,
 };
 
-export default ({ layout = 'empty', ...props }) => {
+export default ({ layout = 'empty', title = '', ...props }) => {
   // if layout is string create with or { name }
   let name;
   let _props = {};
@@ -27,5 +28,10 @@ export default ({ layout = 'empty', ...props }) => {
   }
 
   // create children in here???
-  return React.createElement(_layouts[name] || empty, _props)
+  return <>
+    {title&&<Helmet>
+      <title>{title}</title>
+    </Helmet>}
+    {React.createElement(_layouts[name] || empty, _props)}
+  </>
 };

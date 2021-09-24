@@ -1,4 +1,4 @@
-import appStore from "./exampleStore"
+import appStore from "./app"
 
 export default {
     appStore
